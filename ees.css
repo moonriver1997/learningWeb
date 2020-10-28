@@ -1,0 +1,45 @@
+:root{
+    --color-contentTitle: #FFFFFF;
+    --color-contentText: #CCCBCE;
+    --color-contextItem: #5B4FE1;
+    --color-contentBox: #000066;
+    --color-contentBoxHover: linear-gradient(315deg, #000099 0%, #00ccff 100%);
+    --height-contentTitle: 100px;
+}
+body{
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    font-family: monospace, 微軟正黑體;
+}
+
+.contentBox{
+    display: inline-block;
+    float: left;
+    height: calc(100% - var(--height-contentTitle));
+    width: 25%;
+    margin: 0;
+    padding-top: var(--height-contentTitle);
+    background-color: var(--color-contentBox);
+    text-align: center;
+    color: var(--color-contentTitle);
+}
+.contentBox:hover{
+    background: var(--color-contentBoxHover);
+    cursor: pointer;
+}
+.contentBox h:after{
+    display: block;
+    margin-top: 40px;
+    margin-left: 20%;
+    width: 60%;
+    border-bottom: 2px solid var(--color-contextItem);
+    opacity: 0.6;
+    content:'';
+}
+.contentBox p{
+    margin-top: 40px;
+    color: var(--color-contentText);
+}
