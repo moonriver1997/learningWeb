@@ -1,0 +1,106 @@
+:root{
+    --color-contentBack: rgb(230, 224, 255);
+    --color-contentNav: rgba(57, 57, 70, 0.08);
+    --color-contentTab: rgba(57, 57, 70);
+    --color-background: linear-gradient(45deg, 
+            rgba(28, 28, 74, 0.65) 0%,
+            rgba(28, 28, 74, 0.8) 10%, 
+            rgba(28, 28, 74, 0.95) 30%, 
+            rgba(28, 28, 74, 1.0) 50%, 
+            rgba(28, 28, 74, 0.95) 70%, 
+            rgba(28, 28, 74, 0.8) 90%,
+            rgba(28, 28, 74, 0.65) 100%);
+}
+body{
+    background: var(--color-background);
+}
+
+/*index*/
+.mainImg{
+    width: 160px;
+    position: fixed;
+    left: 45%;
+    top: 35%;
+}
+
+.itemBtn{
+    position: fixed;
+    font-weight: bold;
+    color: white;
+}
+.itemBtn div{
+    border-radius: 50%;
+    height: 40%;
+    width: 40%;
+    margin-top: 10%;
+}
+.itemBtn div font{
+    margin-left: 59%;
+}
+
+/*content*/
+#dataStructure:checked ~ .content,
+#machineLearning:checked ~ .content,
+#programming:checked ~ .content,
+#music:checked ~ .content{
+    display: inline;
+}
+
+#dataStructure:checked ~ .content .contentNav [for="dataStructure"],
+#machineLearning:checked ~ .content .contentNav [for="machineLearning"],
+#programming:checked ~ .content .contentNav [for="programming"],
+#music:checked ~ .content .contentNav [for="music"]{
+    background-color: var(--color-contentNav);
+    border-top: 5px solid rgba(28, 28, 74, 1.0);
+}
+
+#dataStructure:checked ~ .content .dataStructure,
+#machineLearning:checked ~ .content .comingSoon,
+#programming:checked ~ .content .comingSoon,
+#music:checked ~ .content .comingSoon{
+    display: block;
+}
+
+.content{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-contentBack);
+    display: none;
+}
+.content .contentNav{
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: var(--color-contentBack);
+    text-align: center;
+    box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+}
+.content .contentNav img{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    width: 60px;
+}
+.content .contentNav .nav{
+    display: inline-block;
+    height: calc(100% - 25px - 5px);
+    width: 240px;
+    color: #000000;
+    font-weight: bold;
+    padding-top: 25px;
+}
+
+.dataStructure,
+.comingSoon{
+    display: none;
+    height: calc(100% - 80px);
+    width: 100%;
+    margin-top: 80px;
+}
+
+.dataStructure .tab{
+    width: 198px;
+    height: 100%;
+    background-color: var(--color-contentTab);
+    border-radius: 0 0 35px 0;
+}

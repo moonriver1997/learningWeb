@@ -1,28 +1,56 @@
 <html>
     <head>
-        <title>EES</title>
+        <title>MoonRiver | Learning web</title>
         <meta charset="utf-8">
-        <link rel="stylesheet" href="moonriver.css">
+        <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="deco.css">
+        <link rel="stylesheet" href="item.css">
     </head>
     <body>
-       
-        <div>
-             <div class="contentBox">
-                <h class="font_48">About</h>
-                <p>說明部分</p>
+        <input id="index" type="radio" name="nav" >
+        <input id="dataStructure" type="radio" name="nav">
+        <input id="machineLearning" type="radio" name="nav" checked>
+        <input id="programming" type="radio" name="nav">
+        <input id="music" type="radio" name="nav">
+        <img src="moonriverLogo_.png" class="mainImg">
+        <label for="dataStructure" class="itemBtn font_32" style="width: 180px; height: 180px; left: 62%; top: 5%">
+            <div style="background-color: #a3a3dc;">
+                <font>Data&nbsp;Structure</font>
             </div>
-            <div class="contentBox">
-                <h class="font_48">Class</h>
-                <p>說明部分</p>
+        </label>
+        <label for="machineLearning" class="itemBtn font_28" style="width: 140px; height: 140px; left: 70%; top: 80%">
+            <div style="background-color: #668cff;">
+                <font>Machine&nbsp;Learning</font>
             </div>
-            <div class="contentBox">
-                <h class="font_48">Professor</h>
-                <p>說明部分</p>
+        </label>
+        <label for="programming" class="itemBtn font_24" style="width: 100px; height: 100px; left: 30%; top: 20%">
+            <div style="background-color: #ff4d4d;">
+                <font>Programming</font>
             </div>
-            <div class="contentBox">
-                <h class="font_48">Lab</h>
-                <p>說明部分</p>
+        </label>
+        <label for="music" class="itemBtn font_32" style="width: 200px; height: 200px; left: 15%; top: 60%">
+            <div style="background-color: #000000;">
+                <font>Music</font>
+            </div>
+        </label>
+        
+        <div class="content">
+            <div class="contentNav">
+                <div style="float: left; background-color: rgba(28, 28, 74, 1); height: 100%; width: 100px; border-radius: 0 35px 0 0; box-shadow: 4px 0px 5px rgba(0, 0, 0, 0.3);">
+                    <label for="index">
+                        <img src="moonriverLogo_.png">
+                    </label>
+                </div>
+                <label class="nav font_24" for="dataStructure">Data Structure</label>
+                <label class="nav font_24" for="machineLearning">Machine Learning</label>
+                <label class="nav font_24" for="programming">Programming</label>
+                <label class="nav font_24" for="music">Music</label>
+            </div>
+            <div class="dataStructure">
+                <div class="tab"></div>
+            </div>
+            <div class="comingSoon" style="background-color: bisque;">
+                coming soon
             </div>
         </div>
     </body>
