@@ -4,35 +4,54 @@
         <meta charset="utf-8">
         <link rel="stylesheet" href="main.css">
         <link rel="stylesheet" href="deco.css">
+        <link rel="stylesheet" href="content.css">
         <link rel="stylesheet" href="item.css">
     </head>
     <body>
-        <input id="index" type="radio" name="nav" >
+        <input id="index" type="radio" name="nav" checked>
         <input id="dataStructure" type="radio" name="nav">
-        <input id="machineLearning" type="radio" name="nav" checked>
+        <input id="machineLearning" type="radio" name="nav">
         <input id="programming" type="radio" name="nav">
         <input id="music" type="radio" name="nav">
         <img src="moonriverLogo_.png" class="mainImg">
-        <label for="dataStructure" class="itemBtn font_32" style="width: 180px; height: 180px; left: 62%; top: 5%">
-            <div style="background-color: #a3a3dc;">
-                <font>Data&nbsp;Structure</font>
-            </div>
-        </label>
-        <label for="machineLearning" class="itemBtn font_28" style="width: 140px; height: 140px; left: 70%; top: 80%">
-            <div style="background-color: #668cff;">
-                <font>Machine&nbsp;Learning</font>
-            </div>
-        </label>
-        <label for="programming" class="itemBtn font_24" style="width: 100px; height: 100px; left: 30%; top: 20%">
-            <div style="background-color: #ff4d4d;">
-                <font>Programming</font>
-            </div>
-        </label>
-        <label for="music" class="itemBtn font_32" style="width: 200px; height: 200px; left: 15%; top: 60%">
-            <div style="background-color: #000000;">
-                <font>Music</font>
-            </div>
-        </label>
+        <div class="link">
+            <label for="dataStructure" class="itemBtn font_32" style="transform: scale(1); left: 62%; top: 5%">
+                <div style="background-color: #a3a3dc;">
+                    <font>Data&nbsp;Structure</font>
+                </div>
+            </label>
+            <label for="machineLearning" class="itemBtn font_32" style="transform: scale(0.8); left: 70%; top: 80%">
+                <div style="background-color: #668cff;">
+                    <font>Machine&nbsp;Learning</font>
+                </div>
+            </label>
+            <label for="programming" class="itemBtn font_32" style="transform: scale(0.68); left: 30%; top: 20%">
+                <div style="background-color: #ff4d4d;">
+                    <font>Programming</font>
+                </div>
+            </label>
+            <label for="music" class="itemBtn font_32" style="transform: scale(0.88); left: 15%; top: 60%">
+                <div style="background-color: #000000;">
+                    <font>Music</font>
+                </div>
+            </label>
+        </div>
+        <div class="star">
+            <div style="top: 90px; left: 60px;"></div>
+            <div style="top: 90px; left: 580px;"></div>
+            <div style="top: 40px; left: 280px;"></div>
+            <div style="top: 200px; left: 170px;"></div>
+            <div style="top: 260px; left: 380px;"></div>
+            <div style="top: 380px; left: 100px;"></div>
+            <div style="top: 390px; left: 670px;"></div>
+            <div style="top: 480px; left: 460px;"></div>
+            <div style="top: 110px; left: 780px;"></div>
+            <div style="top: 240px; left: 880px;"></div>
+            <div style="top: 510px; left: 810px;"></div>
+            <div style="top: 360px; left: 990px;"></div>
+            <div style="top: 140px; left: 1100px;"></div>
+            <div style="top: 280px; left: 1220px;"></div>
+        </div>
         
         <div class="content">
             <div class="contentNav">
@@ -49,8 +68,29 @@
             <div class="dataStructure">
                 <div class="tab"></div>
             </div>
-            <div class="comingSoon" style="background-color: bisque;">
-                coming soon
+            <div class="comingSoon">
+                <div class="comingBack">
+                    <div class="planet">
+                        <div class="planetDeco-1" style="height:20px; width:110px; border-radius:10px; top:60px; left:85px;"></div>
+                        <div class="planetDeco-1" style="height:15px; width:90px; border-radius:6.5px; top:80px; left:110px;"></div>
+                        <div class="planetDeco-1" style="height:25px; width:120px; border-radius:15px; top:78px; left:50px;"></div>
+                        <div class="planetDeco-1" style="height:22px; width:90px; border-radius:11px; top:70px; left:12px;"></div>
+                        <div class="planetDeco-2" style="height:15px; width:40px; border-radius:7.5px; top:50px; left:70px;"></div>
+                        <div class="planetDeco-2" style="height:20px; width:60px; border-radius:11px; bottom:25px; left:10px;"></div>
+                        <div class="planetDeco-2" style="height:15px; width:45px; border-radius:7.5px; top:40px; left:130px;"></div>
+                        <div class="planetDeco-3" style="height:12px; width:30px; border-radius:7.5px; top:7px; left:32px;"></div>
+                        <div class="planetDeco-shad" style="height:200px; width:200px; border-radius:50%; bottom: 160px; right:14px;"></div>
+                    </div>
+                    <div class="star">
+                        <div style="bottom:150px; left:200px;"></div>
+                        <div style="bottom:80px; left:65px;"></div>
+                        <div style="top: 60px; left:180px;"></div>
+                        <div style="top: 216px; left:249px;"></div>
+                        <div style="top: 139px; left:100px;"></div>
+                        <div style="top: 60px; left:370px;"></div>
+                    </div>
+                    <div class="text font_54" style="left:340px; top: 140px;">Coming Soon</div>
+                </div>
             </div>
         </div>
     </body>
