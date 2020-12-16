@@ -1,0 +1,118 @@
+/*star*/
+.star div{
+    position: fixed;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background-color: white;
+}
+/*planet*/
+.planetBack{
+    position: fixed;
+}
+.planetBack font,
+.planetBack .planet,
+.planetBack .planet .deco,
+.planetBack .planet .shadow{
+    position: relative;
+}
+.planetBack .planet,
+.planetBack .planet .shadow{
+    height:200px;
+    width:200px;
+    border-radius: 50%;
+}
+.planetBack{
+    height: 500px;
+    width: 500px;
+    border-radius: 50%;
+    color: white;
+    font-size: 64px;
+    cursor: pointer;
+}
+/*coming soon*/
+.comingSoon,
+.comingSoon div{
+    position: relative;
+}
+.comingSoon div{
+    background-color: rgb(160, 82, 45);
+    font-size: 36px;
+    text-align: center;
+    margin: 0px;
+    padding: 10px;
+}
+/*rocket*/
+.rocket,
+.rocket .wing,
+.rocket .body,
+.rocket .bottom,
+.rocket .window{
+    position: relative;
+}
+.rocket{
+    cursor: pointer;
+    height: 108px;
+    width: 50px;
+}
+.rocket .body{
+    height: 100px;
+    width: 50px;
+    border-radius: 50% 50% 0 0;
+}
+.rocket .wing{
+    height: 40px;
+    width: 90px;
+    border-radius: 50% 50% 0 0;
+}
+.rocket .bottom{
+    height: 8px;
+    width: 40px;
+    border-radius: 0 0 2px 2px;
+}
+.rocket .window{
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+}
+/*dialog*/
+.dialog,
+.dialog div,
+.dialog font{
+    position: relative;
+}
+.dialog div{
+    height: 1px;
+    width: 20px;
+    background-color: white;
+    margin: 10px;
+}
+/*UFO*/
+.UFO,
+.UFO .body{
+    position: relative;
+}
+.UFO{
+    cursor: pointer;
+}
+.UFO .body{
+    height: 150px;
+    width: 250px;
+    border-radius: 70% 70% 0% 0% / 80% 80% 50% 50%;
+}
+/*detector*/
+
+/*land*/
+.land{
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    bottom: 0;
+}
+.land .hole{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 200px;
+    height: 50px;
+    border-radius: 50%;
+}
