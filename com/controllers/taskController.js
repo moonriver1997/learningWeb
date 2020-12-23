@@ -3,7 +3,7 @@ app.controller('TaskCtrl', function($scope, $state, $rootScope, $location) {
     $scope.root = $rootScope;
     $rootScope.state = $state.current.name;
     $scope.christmas = {
-        participant: ['月合', '今薇', '沛淇', '珮瑛', '婕妤', '老師'],
+        participant: ['月合', '今薇', '沛淇', '珮瑛', '婕瑜', '老師'],
         pointCal: [0, 0, 0, 0, 0, 0],
         point: intList(0, 6, 1),
         picOrder: [0, 1, 2, 2, 1, 0],
