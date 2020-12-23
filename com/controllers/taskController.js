@@ -14,20 +14,23 @@ app.controller('TaskCtrl', function($scope, $state, $rootScope, $location) {
     };
 
     $scope.btnClick = function (idx) {
-        let con, htmlStr, cssLocate, newImg;
-        cssLocate = [[-50, -90], [60, 50, 40, 30, 20, 10]]
+        let con, htmlStr, cssLocate, newImg, width, height;
+        width = $( document ).width();
+        height = $( document ).height();
+        console.log(width, height);
+        cssLocate = [[-40, -80], [60, 50, 40, 30, 20, 10]]
         con = pointCount($scope.christmas.point);
         htmlStr = '<img src="' + $scope.christmas.picLocate  + $scope.christmas.picTop[con] +'" style="width: 30%; position: relative;'
         if ($scope.christmas.pointCal[idx] < 3) {
-            htmlStr = htmlStr + ' top: ' + cssLocate[0][0] + 'px;';
+            htmlStr = htmlStr + ' top: ' + cssLocate[0][0] * height / 821 + 'px;';
         }
         else {
-            htmlStr = htmlStr + ' top: ' + cssLocate[0][1] + 'px;';
+            htmlStr = htmlStr + ' top: ' + cssLocate[0][1] * height / 821 + 'px;';
         }
 //        console.log($scope.christmas.point.length);
 //        console.log(con)
         if (con != -1){
-            htmlStr = htmlStr + ' left: ' + cssLocate[1][con]+ 'px;';
+            htmlStr = htmlStr + ' left: ' + cssLocate[1][con] * width / 1440+ 'px;';
             htmlStr = htmlStr + '">'
             console.log(htmlStr)
             newImg = $(htmlStr);
