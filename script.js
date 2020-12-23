@@ -55,4 +55,13 @@ app.config(function ($stateProvider, $urlRouterProvider) {
             }
         }
     })
+    .state('christmas',{
+        url: "/christmas",
+        views: {
+            '': {
+                templateUrl: 'com/views/task.html',
+                controller: "TaskCtrl as taskCtrl"
+            }
+        }
+    })
 });
