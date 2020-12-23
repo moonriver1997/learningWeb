@@ -2,9 +2,17 @@
 <div style="width: calc(100% - 10%); height: 100%; background-color: white; padding: 0 5%;">
     <div>
         <div ng-repeat="item in christmas.participant" id="taskDiv-{{$index}}" ng-click='btnClick($index)' style="background-color: transparent; cursor: pointer; display: inline-block; width: calc(90% / 6); text-align: center; position: fixed; left: calc({{$index*90/6}}% + 2%); padding-top: 15%;" >
+            <font style="font-size: 20px; position: relative; left: 25%;">{{item}}</font>
             <img ng-src='{{picUrl($index)}}' style="width: 150%; position: relative;" >
-            <font style="font-size: 20px; position: relative; left: 25%; top: 10px;">{{item}}</font>
+<!--
+            <img src="image/task/chirstmas/gift_1.png" style="width: 30%; position: relative; top: -60px; left: 70px;">
+            <img src="image/task/chirstmas/gift_2.png" style="width: 30%; position: relative; top: -60px; left: 20px;">
+            <img src="image/task/chirstmas/gift_3.png" style="width: 30%; position: relative; top: -60px; left: 4px;">
+            <img src="image/task/chirstmas/gift_4.png" style="width: 30%; position: relative; top: -105px; left: 139px;">
+            <img src="image/task/chirstmas/gift_5.png" style="width: 30%; position: relative; top: -105px; left: 40px;">
+            <img src="image/task/chirstmas/gift_6.png" style="width: 30%; position: relative; top: -105px; left: 20px;">
+-->
         </div>
     </div>
-    <img ng-src="{{christmas.picLocate}}{{christmas.text}}" style="position: fixed; width: calc(100% - 10%); bottom: 10%;">
+    <img ng-src="{{christmas.picLocate}}{{christmas.picText}}" style="position: fixed; width: calc(100% - 10%); bottom: 10%;">
 </div>
